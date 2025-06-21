@@ -1,12 +1,16 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## React Card Dealing Game App
+- This app accept user input of number of players
+- Shuffle and distribute the cards to the players
 
-Currently, two official plugins are available:
+## System Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Docker installed
+- Default ports 3000 must be available
 
-## Expanding the ESLint configuration
+## Setup
+- Run `docker build -t react-deal-card:latest .`.
+- Run `docker run -d -p  3000:3000 react-deal-card`.
+- If there are no issues, your app should run `http://localhost:3000`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
